@@ -8,6 +8,8 @@ const images = [
   { url: "https://picsum.photos/id/239/200/300" },
 ];
 
+btn.addEventListener('click',()=>{
+	btn.style.display='none';
 output.innerHTML=`<div id='loading'>Loading...</div>`
 
 function loadImage(image) {
@@ -39,3 +41,5 @@ downloadImages(images)
 	  output.innerHTML='';
 	  output.appendChild(errorDiv);
   });
+
+});
